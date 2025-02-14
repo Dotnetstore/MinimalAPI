@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9DB632C3-84B5-46D6-A11B-14EEC74BEAA4}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Organization", "Organization", "{41A83E41-BB43-45DC-8A2F-B9886315B949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnetstore.Organization", "src\Dotnetstore.Organization\Dotnetstore.Organization.csproj", "{CB6F1230-1E48-47A8-95F5-B4E3C2B99CBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinimalApi", "MinimalApi", "{44C6CFFE-4FD0-4731-BFEF-2EBDF7D95F3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnetstore.MinimalApi", "src\Dotnetstore.MinimalApi\Dotnetstore.MinimalApi.csproj", "{2E0E5C14-2CB6-41A2-B3EA-046C590EEED7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SDK", "SDK", "{A4F09139-C21E-4486-B47E-DE6EAF02F209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnetstore.SDK", "src\Dotnetstore.SDK\Dotnetstore.SDK.csproj", "{DDF98F4E-E69C-4CD1-8CFC-4AEC111306BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestHelper", "TestHelper", "{2939BF17-6F72-4DE8-972F-F5A4EE75CC4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnetstore.TestHelper", "tests\Dotnetstore.TestHelper\Dotnetstore.TestHelper.csproj", "{CFD63011-EF4C-4B59-AA8C-6B16BB1417B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnetstore.SDK.Tests", "tests\Dotnetstore.SDK.Tests\Dotnetstore.SDK.Tests.csproj", "{2532A68F-2442-49BC-A964-ADF2A87D848D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnetstore.Organization.Tests", "tests\Dotnetstore.Organization.Tests\Dotnetstore.Organization.Tests.csproj", "{7DA0E679-6E27-4AEB-B90F-AD827E0F1862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnetstore.MinimalApi.Tests.Integration", "tests\Dotnetstore.MinimalApi.Tests.Integration\Dotnetstore.MinimalApi.Tests.Integration.csproj", "{2FD6FC19-2914-4A5F-9F14-3E1CCE14AC6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB6F1230-1E48-47A8-95F5-B4E3C2B99CBA} = {41A83E41-BB43-45DC-8A2F-B9886315B949}
+		{2E0E5C14-2CB6-41A2-B3EA-046C590EEED7} = {44C6CFFE-4FD0-4731-BFEF-2EBDF7D95F3C}
+		{DDF98F4E-E69C-4CD1-8CFC-4AEC111306BA} = {A4F09139-C21E-4486-B47E-DE6EAF02F209}
+		{CFD63011-EF4C-4B59-AA8C-6B16BB1417B6} = {2939BF17-6F72-4DE8-972F-F5A4EE75CC4C}
+		{2532A68F-2442-49BC-A964-ADF2A87D848D} = {A4F09139-C21E-4486-B47E-DE6EAF02F209}
+		{7DA0E679-6E27-4AEB-B90F-AD827E0F1862} = {41A83E41-BB43-45DC-8A2F-B9886315B949}
+		{2FD6FC19-2914-4A5F-9F14-3E1CCE14AC6D} = {44C6CFFE-4FD0-4731-BFEF-2EBDF7D95F3C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB6F1230-1E48-47A8-95F5-B4E3C2B99CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB6F1230-1E48-47A8-95F5-B4E3C2B99CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB6F1230-1E48-47A8-95F5-B4E3C2B99CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB6F1230-1E48-47A8-95F5-B4E3C2B99CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0E5C14-2CB6-41A2-B3EA-046C590EEED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0E5C14-2CB6-41A2-B3EA-046C590EEED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0E5C14-2CB6-41A2-B3EA-046C590EEED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0E5C14-2CB6-41A2-B3EA-046C590EEED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF98F4E-E69C-4CD1-8CFC-4AEC111306BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF98F4E-E69C-4CD1-8CFC-4AEC111306BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF98F4E-E69C-4CD1-8CFC-4AEC111306BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF98F4E-E69C-4CD1-8CFC-4AEC111306BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD63011-EF4C-4B59-AA8C-6B16BB1417B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD63011-EF4C-4B59-AA8C-6B16BB1417B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD63011-EF4C-4B59-AA8C-6B16BB1417B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD63011-EF4C-4B59-AA8C-6B16BB1417B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2532A68F-2442-49BC-A964-ADF2A87D848D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2532A68F-2442-49BC-A964-ADF2A87D848D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2532A68F-2442-49BC-A964-ADF2A87D848D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2532A68F-2442-49BC-A964-ADF2A87D848D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DA0E679-6E27-4AEB-B90F-AD827E0F1862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DA0E679-6E27-4AEB-B90F-AD827E0F1862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DA0E679-6E27-4AEB-B90F-AD827E0F1862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DA0E679-6E27-4AEB-B90F-AD827E0F1862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD6FC19-2914-4A5F-9F14-3E1CCE14AC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD6FC19-2914-4A5F-9F14-3E1CCE14AC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD6FC19-2914-4A5F-9F14-3E1CCE14AC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD6FC19-2914-4A5F-9F14-3E1CCE14AC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

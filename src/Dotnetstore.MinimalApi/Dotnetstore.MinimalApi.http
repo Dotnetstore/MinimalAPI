@@ -1,0 +1,50 @@
+@WebAPI_HostAddress = http://localhost:5000
+
+### Get all employees
+GET {{WebAPI_HostAddress}}/employees
+Accept: application/json
+
+###
+
+### Get a specific employee by ID
+GET {{WebAPI_HostAddress}}/employees/d4b3f8b3-3b6b-4b1e-8b4e-0f1f4b7b1b1b
+Accept: application/json
+
+###
+
+### Create a new employee
+POST {{WebAPI_HostAddress}}/employees
+Content-Type: application/json
+
+{
+  "name": "Alice Johnson",
+  "salary": 70000,
+  "address": "789 Pine St",
+  "city": "Newtown",
+  "region": "Newstate",
+  "postalCode": "54321",
+  "country": "USA",
+  "phone": "555-7890"
+}
+
+###
+
+### Update an existing employee
+PUT {{WebAPI_HostAddress}}/employees/d4b3f8b3-3b6b-4b1e-8b4e-0f1f4b7b1b1b
+Content-Type: application/json
+
+{
+  "name": "John Doe Updated",
+  "salary": 75000,
+  "address": "123 Elm St Updated",
+  "city": "Springfield",
+  "region": "IL",
+  "postalCode": "62701",
+  "country": "USA",
+  "phone": "555-555-5555"
+}
+
+###
+
+### Delete an employee
+DELETE {{WebAPI_HostAddress}}/employees/d4b3f8b3-3b6b-4b1e-8b4e-0f1f4b7b1b1b
