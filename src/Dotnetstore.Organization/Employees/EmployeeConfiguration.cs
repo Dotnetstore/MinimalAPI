@@ -11,7 +11,7 @@ internal sealed class EmployeeConfiguration : BaseAuditableEntityConfiguration<E
 
         builder
             .Property(x => x.Name)
-            .HasMaxLength(100)
+            .HasMaxLength(DataSchemeConstants.MaxNameLength)
             .IsRequired()
             .IsUnicode();
 
@@ -21,19 +21,19 @@ internal sealed class EmployeeConfiguration : BaseAuditableEntityConfiguration<E
         
         builder
             .Property(x => x.Address)
-            .HasMaxLength(100)
+            .HasMaxLength(DataSchemeConstants.MaxNameLength)
             .IsRequired()
             .IsUnicode();
         
         builder
             .Property(x => x.City)
-            .HasMaxLength(30)
+            .HasMaxLength(DataSchemeConstants.MaxSmallNameLength)
             .IsRequired()
             .IsUnicode();
         
         builder
             .Property(x => x.Region)
-            .HasMaxLength(100)
+            .HasMaxLength(DataSchemeConstants.MaxNameLength)
             .IsUnicode();
         
         builder
@@ -44,13 +44,13 @@ internal sealed class EmployeeConfiguration : BaseAuditableEntityConfiguration<E
         
         builder
             .Property(x => x.Country)
-            .HasMaxLength(30)
+            .HasMaxLength(DataSchemeConstants.MaxSmallNameLength)
             .IsRequired()
             .IsUnicode();
         
         builder
             .Property(x => x.Phone)
-            .HasMaxLength(30)
+            .HasMaxLength(DataSchemeConstants.MaxSmallNameLength)
             .IsRequired()
             .IsUnicode();
 
