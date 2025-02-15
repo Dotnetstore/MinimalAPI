@@ -1,4 +1,5 @@
 ﻿using Dotnetstore.Organization.Employees;
+using Dotnetstore.SDK.Requests;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using Xunit;
@@ -42,35 +43,35 @@ public class EmployeeMappersTests
         }
     }
     
-    // [Fact]
-    // public void ToEmployee_ShouldMapCreateEmployeeRequestToEmployee()
-    // {
-    //     // Arrange
-    //     var request = new CreateEmployeeRequest(
-    //         "John Doe",
-    //         1000,
-    //         "123 Main St",
-    //         "Springfield",
-    //         "IL",
-    //         "62701",
-    //         "USA",
-    //         "555-555-5555");
-    //
-    //     // Act
-    //     var employee = request.ToEmployee();
-    //
-    //     // Assert
-    //     using (new AssertionScope())
-    //     {
-    //         employee.Name.Should().Be(request.Name);
-    //         employee.Salary.Should().Be(request.Salary);
-    //         employee.Address.Should().Be(request.Address);
-    //         employee.City.Should().Be(request.City);
-    //         employee.Region.Should().Be(request.Region);
-    //         employee.PostalCode.Should().Be(request.PostalCode);
-    //         employee.Country.Should().Be(request.Country);
-    //         employee.Phone.Should().Be(request.Phone);
-    //         employee.CreatedAt.Should().BeCloseTo(DateTimeOffset.Now, new TimeSpan(0, 0, 1));
-    //     }
-    // }
+    [Fact]
+    public void ToEmployee_ShouldMapCreateEmployeeRequestToEmployee()
+    {
+        // Arrange
+        var request = new CreateEmployeeRequest(
+            "John Doe",
+            1000,
+            "123 Main St",
+            "Springfield",
+            "IL",
+            "62701",
+            "USA",
+            "555-555-5555");
+    
+        // Act
+        var employee = request.ToEmployee();
+    
+        // Assert
+        using (new AssertionScope())
+        {
+            employee.Name.Should().Be(request.Name);
+            employee.Salary.Should().Be(request.Salary);
+            employee.Address.Should().Be(request.Address);
+            employee.City.Should().Be(request.City);
+            employee.Region.Should().Be(request.Region);
+            employee.PostalCode.Should().Be(request.PostalCode);
+            employee.Country.Should().Be(request.Country);
+            employee.Phone.Should().Be(request.Phone);
+            employee.CreatedAt.Should().BeCloseTo(DateTimeOffset.Now, new TimeSpan(0, 0, 1));
+        }
+    }
 }
